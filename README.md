@@ -12,6 +12,10 @@
 
 react17.0.2 + react-router5.2.0 + react-redux7.2.4
 
+## 访问地址
+
+http://49.233.14.172:2888/static/mall/index.html#/
+
 ## 关于 数据接口 的说明
 
 该项目所有接口都来自小米有品，接口是由 Egg.js 进行开发的，项目文件有需要的联系。不收费
@@ -73,6 +77,37 @@ npm run dev
 ## 更新日志
 
 - 2021-12-20 项目初步成型
+
+
+
+## 项目依赖
+
+```json
+{
+   "lodash": "^4.17.21",
+    "md5": "^2.3.0",
+    "moment": "^2.29.1",
+    "prop-types": "^15.7.2",
+    "qr.js": "^0.0.0",
+    "qs": "^6.10.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hot-loader": "^4.13.0",
+    "react-redux": "^7.2.4",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-sticky": "^6.0.3",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.3.0",
+    "swiper": "^6.5.8",
+   	"antd": "^4.15.2",
+    "axios": "^0.21.1",
+  	"@craco/craco": "^6.1.2",
+}
+```
+
+
 
 ## 项目截图
 
