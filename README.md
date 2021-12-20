@@ -1,6 +1,6 @@
 # 复刻小米有品商城-项目-仅供个人学习用途
 
-<img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" style="width:100px;height:100px" />[![Eggjs Logo](https://zos.alipayobjects.com/rmsportal/VTcUYAaoKqXyHJbLAPyF.svg)](https://eggjs.org/zh-cn//)
+<img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" style="width:80px;height:80px" />[![Eggjs Logo](https://zos.alipayobjects.com/rmsportal/VTcUYAaoKqXyHJbLAPyF.svg)](https://eggjs.org/zh-cn//)
 
 
 
