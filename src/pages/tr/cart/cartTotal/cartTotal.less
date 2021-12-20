@@ -1,0 +1,83 @@
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 160px;
+  background-color: #fafafa;
+  font-size: 18px;
+  width: 1080px;
+  height: 80px;
+  z-index: 98;
+
+  .ico {
+    display: flex;
+    height: 30px;
+    line-height: 30px;
+    padding: 25px 0px;
+    margin-left: 10px;
+  }
+
+  .select-text {
+    width: 75px;
+  }
+
+  .already-select {
+    margin-left: 20px;
+  }
+
+  // 右部分
+  .cartRight {
+    display: flex;
+
+    .total-price-con {
+      padding-top: 10px;
+      font-size: 12px;
+      color: rgb(153, 153, 153);
+
+      .total-after-prefer {
+        width: 200px;
+        color: rgb(192, 0, 0);
+        font-size: 20px;
+
+        span {
+          color: rgb(51, 51, 51);
+        }
+      }
+
+      .total-info {
+        margin-top: 5px;
+
+      }
+    }
+
+    // 结算按钮
+    .checkout {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: -0.5px;
+      float: right;
+      width: 200px;
+      height: 80px;
+      background-color: rgb(169, 1, 13);
+      color: rgb(255, 255, 255);
+      font-size: 20px;
+      cursor: pointer;
+      transition: all 0.5s cubic-bezier(0, 1, 0.5, 1) 0s;;
+      margin-left: 20px;
+
+    }
+
+    .checkout:hover {
+      background-color: rgb(191, 10, 23);
+    }
+
+    .disable {
+
+      background-color: #e7e7e7 !important;
+      cursor: not-allowed;
+      color: #fff !important;
+    }
+  }
+
+}

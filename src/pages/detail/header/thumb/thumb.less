@@ -1,0 +1,72 @@
+.banner {
+  margin-right: 46px;
+  width: 465px;
+  height: 374px;
+  display: flex;
+  // banner 大图
+  .main {
+    width: 372px;
+    height: 372px;
+    background-color: #f4f4f4;
+    border: 1px solid #ececec;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  }
+  .thumb {
+    width: 85px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-left: 5px;
+    .thumb-container {
+      position: absolute;
+      left: 0;
+      transition: top 0.3s ease;
+      .thumb-pic {
+        width: 83px;
+        height: 83px;
+        margin-bottom: 11px;
+        border-color: rgb(236, 236, 236);
+        box-sizing: content-box;
+        border-width: 1px;
+        border-style: solid;
+        background-color: #f4f4f4;
+        border-color: rgb(236, 236, 236);
+        transition: all 2s cubic-bezier(0, 1, 0.5, 1);
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .thumb-arrow-up,
+    .thumb-arrow-down {
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      display: none;
+      width: 100%;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.3);
+      .iconfont {
+        color: white;
+        font-size: 5px;
+      }
+    }
+    .thumb-arrow-down {
+      bottom: 0 !important;
+    }
+  }
+  .thumb:hover {
+    cursor: pointer;
+  }
+  .thumb:hover > .thumb-arrow-up,
+  .thumb:hover > .thumb-arrow-down {
+    cursor: pointer;
+    display: flex;
+  }
+}

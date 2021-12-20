@@ -1,0 +1,151 @@
+.banner-nav {
+  width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  height: 358px;
+  .nav-container {
+    height: 358px;
+    width: 221px;
+    background-color: #9f8052;
+    position: relative;
+    .nav-list {
+      height: 358px;
+      color: white;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      .nav-item {
+        padding: 0 30px;
+        height: 33.2px;
+        display: flex;
+        align-items: center;
+      }
+      .nav-item:first-of-type {
+        margin-top: 13px;
+      }
+    }
+    // 鼠标移入navlist触发的样式
+    .show-all {
+      height: 358px;
+      .is-selected {
+        background-color: rgba(0, 0, 0, .15);
+      }
+    }
+    .show {
+      display: block !important;
+    }
+    .nav-detail {
+      display: none;
+      position: absolute;
+      left: 221px;
+      top: 0;
+      width: 860px;
+      min-height: 360px;
+      height: auto;
+      padding: 20px 0px;
+      background-color: #fff;
+      border: 1px solid #eee;
+      transition: opacity 2s ease;
+      z-index: 1000;
+      .sub-cate-arae {
+        .cate-name {
+          padding-left: 33px;
+          color: #805e3f;
+          font-size: 18px;
+          font-weight: 700;
+          margin-bottom: 11px;
+        }
+
+        .sub-nav-item-row {
+          display: flex;
+          .category-2-item {
+            display: inline-flex;
+            padding-left: 33px;
+            padding-right: 34px;
+            width: 80px;
+            align-items: center;
+            box-sizing: content-box;
+            height: 50px;
+            .name {
+              color: #333;
+              font-weight: 700;
+              width: 56px;
+              white-space: nowrap;
+              overflow-x: hidden;
+              overflow-y: hidden;
+              text-overflow: ellipsis;
+              text-align: justify;
+              text-align-last: justify;
+            }
+            .iconhtbArrowright02 {
+              color: black;
+              width: 12px;
+            }
+          }
+          .category-3-list {
+            width: 673px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+            border-bottom: 1px dashed #e6e6e6;
+
+            .category-3-item {
+              margin-right: 15px;
+              white-space: nowrap;
+              text-decoration: none;
+              color: #666;
+            }
+            .category-3-item:hover {
+              color: red;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* 轮播图 */
+  .banner-box {
+    width: 859px;
+    height: 100%;
+    position: relative;
+    .next,
+    .prev {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      width: 38px;
+      height: 38px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .prev {
+      left: 20px !important;
+    }
+    .next:hover,
+    .prev:hover {
+      background-color: rgba(159, 128, 82, 0.7);
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+    }
+    .ant-carousel .slick-dots li {
+      button {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        opacity: 1;
+      }
+      .slick-active {
+        background: #a7936e;
+        box-shadow: 0 0 0 3px #ccc;
+        border-radius: 50%;
+        border: none;
+      }
+    }
+  }
+}

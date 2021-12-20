@@ -1,0 +1,130 @@
+.header {
+  width: 100%;
+  padding-top: 20px;
+  margin-bottom: 5px;
+  height: 51px;
+  box-sizing: content-box;
+
+  .header-warpper {
+    display: flex;
+    align-items: center;
+    height: 51px;
+
+    .logo {
+      width: 263px;
+    }
+
+    .tab-list {
+      width: 420px;
+      display: flex;
+
+      .tab-item {
+        margin-right: 32px;
+        transition: color .2s ease;
+        font-size: 18px;
+        color: #666;
+        line-height: 57px;
+        height: 51px;
+      }
+
+      .tab-item:hover {
+        color: #9f8052;
+        cursor: pointer;
+      }
+    }
+
+    .search {
+      width: 296px;
+
+      .search-form {
+        width: 281px;
+        height: 42px;
+        padding-top: 13px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        border-bottom: 1px solid #e7e7e7;
+        transition: all .3s;
+
+        .search-input-con {
+          width: 100%;
+
+          .m-auto-list {
+            position: absolute;
+            left: 0;
+            top: 65px;
+            border: 1px solid #e7e7e7;
+            border-radius: 2px;
+            width: 100%;
+            background-color: #fff;
+            box-shadow: 1px 9px 25px rgb(0 0 0 / 10%);
+            display: none;
+            z-index: 99;
+
+            li {
+              height: 36px;
+              padding: 0 10px;
+              line-height: 36px;
+              color: #666;
+              font-size: 13px;
+              cursor: pointer;
+              overflow: hidden;
+              transition: all .2s;
+            }
+
+            li:hover {
+              background-color: #845f3f !important;
+              color: white !important;
+            }
+          }
+
+          input {
+            outline: 0;
+            transition: all .2s;
+            width: 100%;
+            padding-left: 10px;
+            border: none;
+            color: #333;
+            font-size: 14px;
+
+          }
+        }
+
+        .iconsearch {
+          font-size: 20px;
+        }
+
+        .iconsearch:hover {
+          color: #9f8052;
+        }
+      }
+    }
+
+    .iconcart {
+      font-size: 25px;
+    }
+
+    .iconcart:hover {
+      color: #9f8052;
+    }
+
+    .iconfont {
+      color: black;
+    }
+  }
+}
+
+.ant-affix {
+
+  .header {
+    padding-top: 0;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+
+    .search-form {
+      padding-top: 5px !important;
+    }
+
+
+  }
+}

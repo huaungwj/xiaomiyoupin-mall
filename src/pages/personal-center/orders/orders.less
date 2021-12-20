@@ -1,0 +1,58 @@
+@primary_Color: #845f3f;
+.my-orders {
+  .ant-tabs-nav {
+    background: white !important;
+
+    .ant-tabs-tab {
+      border: none;
+      width: 68px;
+      margin-right: 40px !important;
+
+      .ant-tabs-tab-btn {
+        font-size: 16px;
+      }
+    }
+
+    .delete-tab-item {
+      display: flex;
+      align-items: center;
+      padding-right: 15px;
+
+      .icontemplate_delete-copy {
+        font-size: 16px;
+        color: black;
+      }
+    }
+
+    .delete-tab-item:hover {
+      cursor: pointer;
+
+      span:hover {
+        color: @primary_Color;
+      }
+
+      .icontemplate_delete-copy:hover {
+        color: @primary_Color;
+      }
+    }
+  }
+
+
+  .ant-tabs-content-holder {
+    .personal-main {
+      min-height: 500px;
+    }
+  }
+
+  .order-pagination {
+    margin-top: 35px;
+    margin-right: 35px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.delete-personal-main {
+  flex-direction: column;
+}

@@ -1,0 +1,74 @@
+.p-search-result {
+  padding-bottom: 100px;
+  background-color: #f2f2f2;
+  .container {
+    padding: 30px 0;
+    .search-container {
+      display: flex;
+      flex-direction: column;
+      .search-tit {
+        margin-bottom: 10px;
+        font-size: 14px;
+        span {
+          color: #845f3f;
+        }
+      }
+      .product-list {
+        display: flex;
+        flex-wrap: wrap;
+        .search-item {
+          margin-right: 4px;
+          margin-bottom: 5px;
+          .pro-info {
+            font-size: 16px;
+            height: 26px;
+            line-height: 26px;
+            color: #333;
+          }
+          .pro-price {
+            font-size: 14px;
+            .m-num {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+      .search-pagination {
+        margin-top: 35px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+/* 分页 上一个 and 下一页 */
+.m-safe-anchor {
+  position: relative;
+  display: block;
+  border: 1px solid #ccc;
+  background: #fff repeat none 0 0;
+  padding: .44em .75em;
+  line-height: 1.25;
+}
+// 左
+.ant-pagination-prev  {
+  margin-right: 0;
+}
+// 右
+
+.ant-pagination-item {
+  margin-right: 0;
+}
+.ant-pagination-item-active {
+  background: #845f3f;
+  color: white;
+  a {
+    color: white;
+  }
+}
+
+.ant-pagination-item-active:hover a {
+  color: white;
+}

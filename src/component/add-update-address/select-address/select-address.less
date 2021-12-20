@@ -1,0 +1,92 @@
+@primary_Color: #845f3f;
+/* 选择城市组件 */
+.selectAddress{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  // overflow: hidden;
+  position: relative;
+  /* 输入展示框 */
+  .select-city-value {
+    .m-input {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      box-sizing: border-box;
+      border: 1px solid #eee;
+      transition: border .5s;
+    }
+    .m-input:focus {
+      outline: none;
+    }
+  }
+  /* 城市展示选择部分 */
+  .select-city {
+    position: absolute;
+    top: 50px;
+    background-color: #fff;
+    width: 100%;
+    border: 1px solid @primary_Color;
+    z-index: 10000;
+    // display: none;
+    display: block;
+    padding-bottom: 5px;
+    /* 头部 */
+    .selectTitle {
+      margin-top: 15px;
+      margin-left: 15px;
+      margin-right: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      // 没选择样式
+      .ts-span {
+        color: @primary_Color;
+        padding-right: 12px;
+      }
+      // 城市的样式
+      .sd-span {
+        color: #333;
+        padding-right: 12px;
+      }
+      // 图标
+      .iconsearchclose {
+        cursor: pointer;
+        color: #ccc;
+        font-size: 13px;
+      }
+      .iconsearchclose:hover {
+        color: @primary_Color;
+      }
+    }
+    /* 分割线 */
+    .line {
+      margin-top: 10px;
+      margin-left: 15px;
+      width: 575px;
+      height: 1px;
+      background-color: #eee;
+    }
+    /* 选择城市 城市展示区 */
+    .address-content {
+      margin-top: 20px;
+      margin-left: 15px;
+      line-height: 30px;
+      width: 575px;
+      font-size: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      span {
+        margin-right: 10px;
+        cursor: pointer;
+        border-bottom: 1px solid transparent;
+        font-size: 14px;
+      }
+      span:hover {
+        border-bottom: 1px solid @primary_Color;
+      }
+    }
+  }
+
+  
+}

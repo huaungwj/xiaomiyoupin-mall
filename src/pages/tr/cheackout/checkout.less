@@ -1,0 +1,121 @@
+.address {
+  .title {
+    margin-bottom: 15px;
+    font-size: 19px;
+    color: #333;
+  }
+
+  .moreAddress {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    height: 42px;
+    line-height: 42px;
+    background-color: #fafafa;
+    width: 100%;
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+    transition: all .5s cubic-bezier(0, 1, .5, 1);
+    cursor: pointer;
+
+    .txt {
+      margin-right: 8px;
+    }
+
+    .icondown, .iconup1 {
+      font-size: 13px;
+      color: #999;
+    }
+
+  }
+
+  .moreAddress:hover .icondown, .moreAddress:hover {
+    color: #845f3f;
+  }
+}
+
+// 商品价格部分
+.checkout-summary {
+  margin-top: 37px;
+  text-align: right;
+  border-bottom: 1px solid #e7e7e7;
+
+  // 商品价格目录
+  .check-freeInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    //text-align: right;
+
+    .freeInfo-item {
+      height: 25px;
+      font-size: 14px;
+      display: block;
+      //position: relative;
+
+      .freeInfo-key {
+        //position: absolute;
+        width: 126px;
+
+      }
+
+      .freeInfo-value {
+        margin-left: 25px;
+        margin-right: 20px;
+        color: #c00000;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+
+    // 总价
+    .total {
+      font-size: 18px;
+      margin-top: 37px;
+      margin-bottom: 20px;
+      display: flex;
+
+      .freeInfo-value {
+        margin-right: 20px;
+        color: #c00000;
+      }
+    }
+  }
+
+
+}
+
+// 去下单按钮
+.bottom-pay {
+  margin-top: 45px;
+  text-align: right;
+
+  .m-btn-middle {
+    width: 167px;
+    height: 52px;
+    line-height: 42px;
+    font-size: 20px;
+  }
+
+}
+
+.disable {
+
+  background-color: #e7e7e7 !important;
+  cursor: not-allowed;
+  color: #fff !important;
+  border: none
+}
+
+.disable:hover {
+  background-color: #e7e7e7 !important;
+  cursor: not-allowed;
+  color: #fff !important;
+}
+
+

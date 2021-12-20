@@ -1,0 +1,81 @@
+// 优惠劵
+.coupon-item {
+  position: relative;
+  width: 396px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  color: white;
+  // 头部
+  .coupon-top {
+    background-color: #92c8e1;
+    display: flex;
+    padding: 13px;
+    overflow: hidden;
+    // 价格
+    .price {
+      height: 50px;
+      line-height: 50px;
+      font-size: 14px;
+      word-break: keep-all;
+      .m-num {
+        font-size: Arial;
+        font-size: 50px;
+      }
+    }
+    // 右边描述
+    .coupon-top-right {
+      font-size: 16px;
+      padding-left: 50px;
+      height: 50px;
+      .tr-desc {
+        word-break:break-word;
+      }
+    }
+  }
+  // 中间背景 
+  .coupon-m-bg {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAxgAAAAYCAYAAAB5lVv5AAADhElEQVR4Ae3ZA8xkVxjG8ffcUW3btm3bjWo7qhHVtu02qG03qNuojqqoNp436c3dM994zyDf/H+bZ3Vnnj1z8WZPJlz+5pf/GgAAAAAkkClHKecpryj/WHcAAAAA4FvlDuWEspldbYXFlDOUfZVgzQEAAADAl8qpyv3KnyaZxT5T9ld2UH4wAAAAAGjsQWUl5a58c+Eya+xxZWvlF4sBAAAAwH3KHo2+lMisuTeVw6wAAAAAAB8pByp/WwOZtXan8qziAAAAAOAw5RdrIrP2zlIAAAAA4EXlNWsh67DkEwMAAAAw7m62NjLrzDMGAAAAYNw9nWqD8aEBAAAAGGffKd8k2WBstvDMp2y16CyWZ415Z7Dc4rNOY1Me02tt2rJqZeZaybZYpDi2pTL/jFVzQdlwwZmi964+T9G71GzTTuitldQrs05TntA77wz/96p4o7reVeae3nJLzx73bqreSimYm33asm1Z1zv39BVzJRVvvFDcu9JcRe9yc0w3kN5NFprZylkwN+d0lbhXv/e/E3+NvzZ67/Lqyi1f1+tr8LWIr01rjHv1GZr2+hpzWnt0zK+F17p5ZqhGvX4N/Vq6ainYpnW9fq1yuobRsQ2910Tmn7F5r+4Z3Ttxr99budXmiXvXX2BGyy04U21Cr9/TbtryxF5/FnJ6RqJj685f9C6k3q2i3pltxqp6ZbpKZpvX9S46S9G79nwzRsf057736nXRsc3VO4N6xX/Vn+PehbWOnH/u+tnRtFfr83WKr9vXHz0zC07Rq+vUZHaknUm67ybBTEoyO0Z2JuWzY9Rnkt976WeSP+PDn0npZ8dwZlI+O1LPJF3fEZ9JPjuGP5OGPztGeybls2PYM0m9M5mk+gYjWA+CfkxmYdR6OaEJ7tH4zyH9PZ0PkuTUO2mvY0jwjzCTholhHCyknEnMDmYS/5/hgw9hJnUuXP7ml9aBw5VrDAAAAMC4+lqZN9U3GMsZAAAAgHE2jzJHqg3GFgYAAABg3G2eYoOxmrKsAQAAABh3B6TYYJyhAAAAAMBWympTs8HYRdlZAQAAAICgXKtUe9lgrKjcagUAAAAAWFO5UgndbDA2UJ5XZrYYAAAAAByi3KTU2m0w5lQuUl5Q5rDGAAAAAOAA5W1lWyWYuLKyt7Kwsr6ytVKz9gAAAABgOeVx5RPlMeWDspnda70DAAAAgCWU40z+Ay4MGpxUCVY0AAAAAElFTkSuQmCC);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100%;
+    height: 12px;
+    margin-bottom: -1;
+  }
+  // 是否使用
+  .coupon-tip {
+    position: absolute;
+    top: 98px;
+    right: 20px;
+    color: #666;
+  }
+  // 优惠卷下部分详细描述 有效范围、适用范围
+  .coupon-desc{
+    background-color: #92c8e1;
+    padding: 13px;
+    // 有效范围
+    .coupon-time {
+      margin-top: 2px;
+      line-height: 20px;
+      font-size: 12px;
+    }
+    p{
+      margin-top: 2px;
+      line-height: 20px;
+      font-size: 12px;
+    }
+    // 适用范围
+    .coupon-area {
+      height: 40px;
+      overflow: hidden;
+    }
+  }
+  // 底下背景
+  .coupon-b-bg {
+    background-image: url('https://www.xiaomiyoupin.com/static3/media/blue-b-bg.d82fe57a.png');
+    height: 22px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100%;
+    margin-bottom: -1px;
+  }
+}

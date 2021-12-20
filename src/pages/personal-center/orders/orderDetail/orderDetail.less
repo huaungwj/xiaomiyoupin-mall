@@ -1,0 +1,155 @@
+.mijia-personal-detail {
+  width: auto;
+
+  section {
+    padding: 15px 0;
+
+    .no-border {
+      border: 0;
+    }
+  }
+
+  // 头部
+  .mijia-personal-detail-header {
+    border-color: #ede8e4;
+    border-width: 1px;
+    font-size: 16px;
+    border-bottom-style: solid;
+    box-sizing: border-box;
+    // 字体标题
+    .mijia-personal-active-font {
+      margin-bottom: 0;
+      color: #845f3f;
+    }
+  }
+
+  // 订单状态
+  .mijia-personal-detail-status-box {
+    display: block;
+    overflow: hidden;
+    padding-right: 32px;
+
+    //订单状态
+    .mijia-personal-detail-status {
+      display: flex;
+      margin: 30px 0 10px;
+      font-size: 10px;
+      color: #333;
+      // 左边文字
+      .mijia-personal-detail-status-left {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+      //右边文字
+      .mijia-personal-active-font {
+        color: #845f3f;
+        font-size: 14px;
+      }
+    }
+
+
+    //步骤进度条
+    .mijia-personal-progress {
+      padding: 15px 0;
+      width: 100%;
+
+      ul {
+        position: relative;
+        width: 100%;
+        height: 20px;
+        overflow: hidden;
+        border-radius: 10px;
+        background: #eee repeat 0 0 none;
+        display: flex;
+
+        li {
+          height: 20px;
+          position: relative;
+          line-height: 20px;
+          text-align: center;
+          font-size: 13px;
+          color: #999;
+          border: 0;
+        }
+
+        .end {
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+        }
+
+        .start {
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+          margin-left: -14px;
+        }
+
+        .active {
+          background: #845f3f repeat 0 0 none;
+          color: #fff;
+        }
+      }
+    }
+
+  }
+
+  //订单信息部分
+  .mijia-personal-detail-item {
+    border-top: 1px dashed #e7e7e7;
+
+    .mijia-personal-detail-message {
+      padding: 1px 0;
+
+      p {
+        padding: 5px 0;
+
+      }
+    }
+  }
+
+  //订单商品部分
+  .order-item {
+    padding-bottom: 20px;
+    margin: 20px 30px 40px 0;
+    border-bottom: 1px solid #e7e7e7;
+  }
+
+  //发票信息
+  .mijia-personal-detail-invoice {
+    padding: 10px 0;
+    overflow: visible;
+
+    .invoice-item {
+      margin-bottom: 5px;
+    }
+
+    .invoice {
+      display: flex;
+      width: 100%;
+
+      .invoice-introduce {
+        position: relative;
+        overflow: visible;
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+
+        .iconzhuyi {
+          color: #999;
+        }
+      }
+    }
+  }
+
+
+  .mijia-personal-block {
+    position: relative;
+    display: block;
+    overflow: hidden;
+  }
+
+  .mijia-personal-price {
+    color: #be2d2d;
+  }
+}

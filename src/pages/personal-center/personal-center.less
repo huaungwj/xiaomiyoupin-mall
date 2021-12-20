@@ -1,0 +1,89 @@
+
+@primary_Color: #845f3f;
+.personal-center {
+  background: #fafafa repeat 0 0 none;
+  padding-bottom: 100px;
+  width: 100%;
+  .person-tit {
+    padding: 25px 0 10px;
+    margin: 0 30px 0 0;
+    color: @primary_Color;
+    font-size: 18px;
+    font-weight: 400;
+    border-bottom: 1px solid #e7e7e7;
+  }
+  // 个人中心详细内容
+  .personal-center-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    /* 左边导航条部分 */
+    .personal-profile {
+      text-align: center;
+      padding: 38px 10px;
+      border-bottom: 1px solid #f3f3f3;
+      display: flex;
+      flex-direction: column;
+      .mijia-personal-profile-photo {
+        margin: 0 auto 8px;
+        width: 54px;
+        height: 54px;
+        background-repeat: no-repeat;
+        border: 1px solid #fafafa;
+        border-radius: 50%;
+      }
+      /* 用户信息头像文字 */
+      .personal-profile-username {
+        overflow: hidden;
+        height: 19.2px;
+        line-height: 19.2px;
+        text-align: ellipsis;
+        white-space: nowrap;
+        text-align: center;
+      }
+    }
+    /* 导航条宽度 */
+    .ant-menu {
+      min-height: 700px;
+    }
+    /* 右边内容 */
+    .personal-container-box {
+      width: 900px;
+      min-height: 700px;
+      padding-bottom: 25px;
+      background: #fff repeat 0 0 none;
+      .personal-main-box {
+        padding: 11px 0 11px 60px;
+        min-height: 500px;
+      }
+    }
+  }
+
+
+  // 空状态
+  .ant-empty {
+    padding-top: 120px;
+    .ant-empty-description {
+      margin-top: 24px;
+
+      .e-info {
+        color: #333;
+      }
+    }
+  }
+}
+
+.personal-center > * {
+  box-sizing: border-box;
+  
+}
+
+
+
+.ant-menu-vertical .ant-menu-item::after, .ant-menu-vertical-left .ant-menu-item::after, .ant-menu-vertical-right .ant-menu-item::after, .ant-menu-inline .ant-menu-item::after {
+  left: 0 !important;
+  right: auto;
+}
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background: none;
+}

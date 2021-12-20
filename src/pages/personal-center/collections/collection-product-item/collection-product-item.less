@@ -1,0 +1,88 @@
+
+@primary_Color: #845f3f;
+.collection-product-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* 商品 */
+  .personal-product {
+    display: flex;
+    padding: 10px 32px 10px 0;
+    border-bottom: 1px dashed #e7e7e7;
+    overflow: hidden;
+    span {
+      height: 120px;
+      line-height: 120px;
+    }
+    // 商品图片
+    .personal-product-image {
+      width: 120px;
+      height: 120px;
+      position: relative;
+      overflow: hidden;
+      margin-right: 25px;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    // 商品描述
+    .personal-product-text-box {
+      font-size: 16px;
+      .personal-product-name-box {
+        max-width: 500px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .personal-price {
+        color: #be2d2d;
+      }
+    }
+  }
+
+  /* 对商品进行操作 取消收藏 查看商品 */
+  .personal-item-footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f3f7f5;
+    display: flex;
+    justify-content: flex-end;
+    button {
+      min-width: 110px;
+      height: 36px;
+      font-size: 16px;
+      margin-right: 20px;
+      color: #666;
+      border: 1px solid #666;
+      border-radius: 2px;
+      padding: 0 6px;
+    }
+  }
+
+  .ant-btn {
+    color: #666;
+    border: 1px solid #666;
+    min-width: 110px;
+    height: 36px;
+    font-size: 16px;
+  }
+  .ant-btn:hover, .ant-btn:focus, .ant-btn:active {
+    background: @primary_Color;
+    color: white;
+  }
+
+}
+
+
+.m-sale-tag {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  padding: 0 6px;
+  background-color: #c00000;
+  color: #fff;
+  font-size: 12px;
+  vertical-align: 2px;
+  border-radius: 2px;
+}

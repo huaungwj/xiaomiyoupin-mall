@@ -1,0 +1,129 @@
+@primary_Color: #845f3f;
+
+// 自定义模拟框样式
+.modal-data {
+  overflow: hidden;
+  background-color: #fff;
+  z-index: 1000;
+  opacity: 1;
+  /* 头部 */
+
+  & > .title {
+    background: #fff;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+
+    .mark {
+      line-height: 55px;
+      font-size: 19px;
+    }
+
+    .closeIcon {
+      line-height: 55px;
+
+      .iconsearchclose {
+        color: #ccc;
+        z-index: 1100;
+      }
+
+      .iconsearchclose:hover {
+        color: @primary_Color;
+        cursor: pointer;
+      }
+    }
+  }
+
+  /* 线 */
+
+  .lines {
+    background: #eee;
+    height: 1px;
+    width: 603px;
+    margin-bottom: 10px;
+  }
+
+  /* 表单内容 */
+
+  .add-address-container {
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+
+    /* 详细地址文本输入框 */
+
+    .detailAddress {
+      margin-top: 40px;
+    }
+
+    /* 邮政编码 */
+
+    .zipcode {
+      padding: 10px;
+      margin-top: 50px;
+      margin-right: 5px;
+      font-size: 14px;
+      width: 297px;
+      box-sizing: border-box;
+      border: 1px solid #eee;
+    }
+
+    .zipcode:focus {
+      outline: none;
+    }
+
+    /* 是否是默认地址 */
+
+    .is-default-address {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      padding-top: 25px;
+
+      .isdefault-icon {
+        i {
+          font-size: 20px;
+          color: #e0e0e0;
+        }
+
+        .iconwanchenggouzi {
+          color: #d54842;
+        }
+      }
+    }
+  }
+}
+
+.ant-modal-close-x {
+  display: none;
+}
+
+.ant-cascader-menu-item-active {
+  background-color: #ddc3ad !important;
+}
+
+.ant-modal-footer {
+  padding: 0;
+  margin-top: 40px;
+  /* 按钮部分 */
+
+  .submit-box {
+    display: flex;
+    background-color: #f2f2f2;
+    height: 90px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    button {
+      min-width: 188px;
+      height: 40px;
+      font-size: 20px;
+    }
+  }
+}
+
+.zipcode:focus {
+  outline: none;
+  box-shadow: none;
+}

@@ -1,0 +1,149 @@
+.crowdfounding {
+  margin-top: 35px;
+  .crow-top {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 36.8px;
+    .subTit span {
+      color: #999;
+      font-size: 14px;
+      margin-left: 12px;
+      display: flex;
+      align-items: flex-end;
+    }
+    
+  }
+  .crow-main {
+    display: flex;
+    // 小盒子
+    .home-good-item {
+      display: flex;
+      flex-direction: column;
+      width: 266px;
+      margin-left: 5px;
+      cursor: pointer;
+      // 商品
+      .item-inner {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        width: 266px;
+        height: 210px;
+        background-color: rgb(248, 248, 248);
+        .pro-img {
+          width: 130px;
+          height: 130px;
+          position: absolute;
+          right: 15px;
+          bottom: 10px;
+        }
+        .pro-text {
+          padding-top: 25px;
+          padding-left: 23px;
+          .pro-info {
+            color: #333;
+            margin-top: 0;
+            font-size: 20px;
+            line-height: 24px;
+            height: 24px;
+          }
+          .pro-price {
+            font-size: 20px;
+            line-height: 24px;
+            height: 24px;
+            overflow: hidden;
+            color: #a92112;
+            margin-top: 11px;
+            .tag {
+              font-size: 11px;
+              vertical-align: top;
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+      // 进度
+      .m-progress-wrap-con {
+        .m-bar-con {
+          width: 100%;
+          height: 3px;
+          overflow: hidden;
+          background-color: #e3e1e2;
+          .m-bar {
+            width: 0;
+            height: 100%;
+            background: url("./images/bar.jpg") 0 0 no-repeat;
+          }
+        }
+        .m-progress-info {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 6px 0;
+
+          .suppory {
+            color: #999;
+            font-size: 15px;
+            margin-left: 15px;
+            display: flex;
+            align-items: center;
+            .sup-num {
+              color: #a92112;
+              margin-right: 6px;
+              font-size: 18px;
+            }
+
+            .common-tag-text {
+              height: 18px;
+              border-radius: 2px;
+              vertical-align: top;
+              padding: 0 6px;
+              color: #fff;
+              font-size: 13px;
+              line-height: 18px;
+              display: inline-block;
+              margin-left: 2px;
+            }
+          }
+          .persent {
+            margin-right: 15px;
+            color: #a92112;
+            font-size: 18px;
+            .num-flag {
+              font-size: 11px;
+            }
+          }
+        }
+      }
+    }
+    // 大盒子样式
+    .home-good-item-big {
+      width: 537px;
+      .item-inner {
+        width: 537px;
+        height: 210px;
+        background-color: rgb(249, 243, 233);
+        flex-direction: row;
+        .pro-img {
+          position: static;
+          width: 215px;
+          height: 215px;
+        }
+        .pro-text {
+          .pro-desc {
+            color: #999;
+            font-size: 16px;
+            line-height: 20px;
+            height: 20px;
+            margin-top: 8px;
+            overflow: hidden;
+            white-space: normal;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+@primary_Color: #845f3f;
+.personal-order-item {
+  padding: 30px 0 15px;
+  border-bottom: 1px solid #e7e7e7;
+  section {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    .personal-sub-font {
+      margin-left: 10px;
+    }
+  }
+  .personal-item-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  /* 每一个订单商品item */
+  .will-click {
+    cursor: pointer;
+  }
+  // 每一个订单的页面
+  .personal-product-item {
+    padding: 10px 32px 10px 0;
+    border-bottom: 1px dashed #e7e7e7;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* 左边文字、图片部分 */
+    .personal-product-item-left {
+      display: flex;
+      align-items: center;
+      // 商品图片
+      .personal-product-item-image {
+        width: 120px;
+        height: 120px;
+        position: relative;
+        overflow: hidden;
+        margin-right: 25px;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      // 商品文字部分
+      .personal-product-text-box {
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        justify-content: center;
+        .personal-product-name-box {
+          margin-top: 14px;
+        }
+        .personal-product-price {
+          color: #be2d2d;
+          font-size: 14px;
+          margin-top: -4px;
+        }
+      }
+    }
+  }
+  // 商品总额 商品件数
+  .personal-products-total{
+    display: flex;
+    padding: 25px 20px 20px;
+    justify-content: flex-end;
+    .personal-price-box{
+      color: #4a4a4a;
+    }
+    .personal-price {
+      color: #be2d2d;
+    }
+  }
+  // 操作商品
+  .personal-products-action{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 20px 10px 0;
+    position: relative;
+    .ant-btn {
+      color: #666;
+      border: 1px solid #666;
+      min-width: 110px;
+      height: 36px;
+      font-size: 16px;
+    }
+    .ant-btn:hover, .ant-btn:focus, .ant-btn:active {
+      background: @primary_Color;
+      color: white;
+    }
+  }
+}
+
+.personal-sub-font {
+  color: #666;
+}
+.personal-active-font {
+  color: @primary_Color;
+}
+
+.personal-right {
+  padding-right: 32px;
+}
+.personal-block {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}

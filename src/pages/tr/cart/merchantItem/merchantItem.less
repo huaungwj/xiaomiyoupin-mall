@@ -1,0 +1,173 @@
+.merchant-item-container {
+  /* 头部 */
+
+  .merchant-info {
+    padding-top: 40px;
+    padding-bottom: 17px;
+    vertical-align: middle;
+    border-bottom: 1px solid #e7e7e7;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    /* name */
+
+    .name {
+      margin-left: 10px;
+      cursor: pointer;
+      flex: 1;
+    }
+
+    /* 注意事项 右边 */
+
+    .mijiapost {
+      position: relative;
+      cursor: pointer;
+
+      .postimg {
+        box-sizing: border-box;
+        margin-right: 5px;
+        display: inline-block;
+        border: 1px solid #999;
+        width: 17px;
+        height: 17px;
+        line-height: 17px;
+        padding-left: 6px;
+        border-radius: 50%;
+      }
+
+      .layer {
+        position: absolute;
+        cursor: default;
+        border: 1px solid #e7e7e7;
+        box-shadow: 0 0 24px rgba(0, 0, 0, .1);
+        top: 30px;
+        right: 0;
+        width: 300px;
+        padding: 30px 25px;
+        background-color: #fff;
+        text-align: center;
+        z-index: 1000;
+      }
+
+      .hide {
+        display: none;
+
+      }
+    }
+
+    .mijiapost:hover .layer {
+      display: inline-block;
+    }
+
+    .postmarginright {
+      margin-right: 15px;
+      color: #999;
+    }
+  }
+
+  /* 是否选择图标 */
+
+  .select-icon {
+    box-sizing: content-box;
+    display: inline-block;
+    margin-left: 7px;
+    margin-right: 20px;
+    vertical-align: middle;
+    margin-top: -5px;
+
+    .iconfont {
+      color: #e0e0e0;
+      font-size: 18px;
+    }
+
+  }
+
+  // 内容部分
+  .good-item-container {
+    border-bottom: 1px dashed #e7e7e7;
+    /*商品*/
+
+    .cart-good-items {
+      overflow: hidden;
+      display: flex;
+      // 选择图标
+      .select {
+        padding: 35px 0;
+        height: 72px;
+        line-height: 72px;
+      }
+
+      .num, .price, .select, .subtotal, .del {
+        padding: 35px 0;
+        height: 72px;
+        line-height: 72px;
+      }
+
+      // 图片
+      .image {
+        height: 142px;
+        position: relative;
+        width: 120px;
+        cursor: pointer;
+
+        img {
+          width: 120px;
+          height: 120px;
+        }
+      }
+
+      // 商品名字
+      .name {
+        box-sizing: border-box;
+        width: 330px;
+        padding: 27px 90px 27px 5px;
+        height: 142px;
+        line-height: 88px;
+        cursor: pointer;
+
+        .vertical-wrap {
+          margin-top: 10px;
+          line-height: 24px;
+        }
+      }
+
+      // 价格
+      .price {
+        width: 215px;
+        text-align: left;
+      }
+
+      // 商品数量
+      .num {
+        width: 205px;
+
+        .count-container {
+          margin-left: -55px;
+          margin-top: 20px;
+        }
+      }
+
+      // 商品总价
+      .subtotal {
+        width: 130px;
+        text-align: left;
+        color: #c00000;
+      }
+
+      // x
+      .del:hover {
+        cursor: pointer;
+      }
+
+      .del {
+        .icondel {
+          color: #b5b2b2;
+        }
+      }
+    }
+  }
+
+}
+

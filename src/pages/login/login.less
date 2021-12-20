@@ -1,0 +1,236 @@
+@primay_color:#ff6700;
+.login-wrapper {
+  width: 100%;
+  min-height: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  justify-content:center;
+  align-items: center;
+  background-color: #f5f5f5;
+  color: #757575;
+  a {
+    color: #757575;
+  }
+//  登录部分
+  .wrap {
+    padding-bottom: 50px;
+    // 内容部分
+    .layout {
+      width: 100%;
+      min-width: 400px;
+      min-height: 480px;
+      background-color: #fff;
+      margin: 0 auto;
+      max-width: 854px;
+      position: relative;
+      // 
+      .mainbox {
+        padding-bottom: 15px;
+        // 头部扫码登录切换部分
+        #custom_display_2 {
+          .ercode {
+            position: absolute;
+            right: 0;
+            top: 0;
+            background: url(https://account.xiaomi.com/static/res/fa9e760/account-static/respassport/acc-2014/img/icon_ercode.png) no-repeat;
+            width: 80px;
+            height: 80px;
+          }
+          .ercode:hover {
+            background-position: -80px 0px;
+          }
+          
+        }
+        // 头部
+        .lgnheader {
+          padding: 25px 0 0 ;
+          text-align: center;
+          // logo
+          .milogo {
+            margin: 0 auto;
+            width: 48px;
+            height: 48px;
+            display: block;
+          }
+          // 文字
+          .header_tit_txt {
+            font-size: 22px;
+            padding-top: 15px;
+            color: #333;
+            font-weight: normal;
+          }
+          .site_info {
+            padding-top: 10px;
+          }
+        }
+        // 登录表单部分
+        .tabs_con.now {
+          display: block;
+          .login-area {
+            width: 358px;
+            margin: 0 auto;
+            padding-bottom: 20px;
+            .loginbox {
+              width: 100%;
+              // 输入框
+              .item_account {
+                height: 48px;
+                width: 100%;
+                line-height: 22px;
+                padding: 13px 16px  13px 14px;
+                display: block;
+                outline: none;
+                overflow: none;
+                color: #4a4a4a;
+                background: #fff;
+                border: 1px solid #e0e0e0;
+              }
+              .item_account:focus {
+                background: #fff;
+                outline: none;
+              }
+              // 按钮
+              .btnadpt {
+                background-color: @primay_color;
+                width: 100%;
+                height: 50px;
+                display: block;
+                text-align: center;
+                font-size: 14px;
+                color: #fff;
+                cursor: pointer;
+                border: none;
+              }
+              // 其他登录部分
+              .other_panel {
+                margin-top: -5px;
+                 .btn_gray{
+                  color: @primay_color;
+                  border: 0 none;
+                  height: auto;
+                  line-height: normal;
+                  margin: 0;
+                  background-color: #fff !important;
+                  display: block;
+                  text-align: center;
+                  font-size: 14px;
+                  cursor: pointer;
+                }
+                // 立即注册
+                .n_links_area {
+                  padding-top: 30px;
+                  text-align: center;
+                  color: #e0e0e0;
+                  a {
+                    font-size: 14px;
+                    color: #757575;
+                  }
+                  span {
+                    padding: 0 5px;
+                  }
+                }
+                // 其它方式登录
+                .other_login_type {
+                  padding-top: 40px;
+                  text-align: center;
+                  .oth_type_tit {
+                    border-top: 2px solid  black;
+                    padding-top: 10px;
+                    .oth_type_txt {
+                      font-size: 14px;
+                      color: #b0b0b0;
+                      margin: 0 auto;
+                      text-align: center;
+                    }
+                  }
+                  .oth_type_links {
+                    padding-top: 5px;
+                    text-align: center;
+                    .icon_type {
+                      width: 30px;
+                      height: 30px;
+                      margin: 0 12px;
+                      display: inline-block;
+                      border-radius: 50%;
+                      .btn_sns_icontype {
+                        display: block;
+                        margin: 4px auto 0;
+                      }
+                      // qq
+                      .icon_default_qq {
+                        background-position: -19px 0 !important;
+                      }
+                      // 微博
+                      .icon_default_weibo {
+                        background-position: -38px 0 !important;
+                      }
+                       // 阿里
+                      .icon_default_alipay {
+                        background-position: -56px 0 !important;
+                        width: 25px !important;
+                      }
+                      // 微信
+                      .icon_default_weixin {
+                        background-position: -83px 0 !important;
+                        width: 24px !important;
+                      }
+                      .btn_sns_icontype {
+                        background: url(https://account.xiaomi.com/static/res/166d6dc/account-static/respassport/acc-2014/img/icons_type.png);
+                        width: 18px;
+                        height: 18px;
+                        vertical-align: middle;
+                      }
+                    }
+                    .btn_qq {
+                      background-color: #0288d1;
+                    }
+                    .btn_weibo {
+                      background-color: #d32f2f;
+                    }
+                    .btn_alipay {
+                      background-color: #0ae;
+                    }
+                    .btn_weixin {
+                      background-color:#00d20d;
+                    }
+
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &, .wrap {
+    width: 100%;
+
+  }
+  .n-footer {
+    text-align: center;
+    margin-top: 20px;
+    .nf-link-area {
+      text-align: center;
+      .lang-select-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li {
+          display: inline-block;
+          .current {
+            color:#333;
+          }
+          a {
+            display: inline-block;
+            padding: 0 10px
+          }
+        }
+      }
+    }
+  }
+}

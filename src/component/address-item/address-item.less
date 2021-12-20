@@ -1,0 +1,98 @@
+@primary_Color: #845f3f;
+/*  每一个地址 */
+.address-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  width: 250px;
+  border: 1px solid #e7e7e7;
+  background-color: #fff;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  transition: border .5s;
+  height: 200px;
+  /* 头部内容 */
+
+  .address-item-content {
+    /* 默认tags */
+
+    .mask {
+      background: #7f6044;
+      margin: 3px;
+      padding: 0;
+      width: 40px;
+      font-size: 9px;
+      color: #fff;
+      text-align: center;
+    }
+
+    .addr-visible {
+      visibility: inherit;
+    }
+
+    .addr-unvisible {
+      visibility: hidden;
+    }
+
+    /* 文字内容 */
+
+    .content {
+      margin-left: 30px;
+      /* 姓名 */
+
+      .name {
+        color: #333;
+        font-size: 16px;
+      }
+
+      // 电话
+      .tel {
+        color: #333;
+        margin-top: 10px;
+        font-size: 13px;
+      }
+
+      // 城市、详细地址
+      .city, .address {
+        color: #999;
+        margin-top: 0;
+        font-size: 13px;
+      }
+    }
+  }
+
+  /* 操作 更新 */
+
+  .update-address {
+    position: absolute;
+    transition: display 1s;
+    bottom: 5px;
+    right: 5px;
+    font-size: 14px;
+    display: none;
+    color: @primary_Color;
+
+    span {
+      padding: 5px;
+      cursor: pointer;
+    }
+  }
+}
+
+// 不隐藏
+.notHidden {
+  display: flex;
+}
+
+.isHidden {
+  display: none;
+}
+
+.address-item:hover {
+  border: 1px solid @primary_Color;
+}
+
+.selected {
+  border: 1px solid #845f3f
+}

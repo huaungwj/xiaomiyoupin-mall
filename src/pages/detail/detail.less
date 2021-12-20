@@ -1,0 +1,38 @@
+.detail {
+  width: 100%;
+  min-height: 285px;
+  padding-top: 60px;
+  padding-bottom: 100px;
+  overflow: hidden;
+  border-top: 1px solid #e7e7e7;
+
+  .container > * {
+    box-sizing: content-box;
+    min-height: inherit;
+    position: relative;
+  }
+
+  .detail-exception {
+    margin-top: 77px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .m-exception .e-img {
+    width: 153px;
+    height: 132px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .m-no-network .e-img {
+    background-image: url("../../assets/images/error/no-network.png");
+  }
+
+  p {
+    margin-top: 20px;
+  }
+}
