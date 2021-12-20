@@ -1,5 +1,7 @@
 {
-  "name": "mi-product",
+  "name": "xiaomiyoupin-mall",
+  "author": "huangweji",
+  "githubUrl": "https://github.com/huaungwj/xiaomiyoupin-mall",
   "homepage": "/static/mall",
   "version": "0.1.0",
   "private": true,
