@@ -111,6 +111,50 @@ npm run dev
 
 ## 项目截图
 
+#### 首页
 
+![](https://github.com/huaungwj/img_storage/blob/main/xiaomiyoupin/%E9%A6%96%E9%A1%B51.png?raw=true)
 
-​	
+​	![](https://github.com/huaungwj/img_storage/blob/main/xiaomiyoupin/%E9%A6%96%E9%A1%B52.png?raw=true)
+
+### 商品详情
+
+![](https://github.com/huaungwj/img_storage/blob/main/xiaomiyoupin/%E5%95%86%E5%93%81%E8%AF%A6%E6%83%851.png?raw=true)
+
+![](https://github.com/huaungwj/img_storage/blob/main/xiaomiyoupin/%E5%95%86%E5%93%81%E8%AF%A6%E6%83%852.png?raw=true)
+
+### 购物车
+
+![](https://github.com/huaungwj/img_storage/blob/main/xiaomiyoupin/%E8%B4%AD%E7%89%A9%E8%BD%A6.png?raw=true)
+
+### 确认页
+
+![](https://github.com/huaungwj/img_storage/blob/main/xiaomiyoupin/%E7%A1%AE%E8%AE%A4%E9%A1%B51.png?raw=true)
+
+![](https://github.com/huaungwj/img_storage/blob/main/xiaomiyoupin/%E7%A1%AE%E8%AE%A4%E9%A1%B52.png?raw=true)
+
+### 支付页
+
+![](https://github.com/huaungwj/img_storage/blob/main/xiaomiyoupin/%E6%94%AF%E4%BB%98%E9%A1%B5.png?raw=true)
+
+![](https://github.com/huaungwj/img_storage/blob/main/xiaomiyoupin/%E6%94%AF%E4%BB%98%E5%AE%9D%E6%94%AF%E4%BB%98.png?raw=true)
+
+### 订单管理
+
+![](https://github.com/huaungwj/img_storage/blob/main/xiaomiyoupin/%E6%88%91%E7%9A%84%E8%AE%A2%E5%8D%95.png?raw=true)
+
+### 订单详情
+
+![](https://github.com/huaungwj/img_storage/blob/main/xiaomiyoupin/%E8%AE%A2%E5%8D%95%E8%AF%A6%E6%83%85.png?raw=true)
+
+### 地址管理
+
+![](https://github.com/huaungwj/img_storage/blob/main/xiaomiyoupin/%E5%9C%B0%E5%9D%80%E7%AE%A1%E7%90%86.png?raw=true)
+
+### 添加地址
+
+![](https://github.com/huaungwj/img_storage/blob/main/xiaomiyoupin/%E6%B7%BB%E5%8A%A0%E5%9C%B0%E5%9D%80.png?raw=true)
+
+### 登录
+
+![](https://github.com/huaungwj/img_storage/blob/main/xiaomiyoupin/%E7%99%BB%E5%BD%95.png?raw=true)
