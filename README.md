@@ -101,9 +101,9 @@ npm run dev
     "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^2.3.0",
     "swiper": "^6.5.8",
-   "antd": "^4.15.2",
+    "antd": "^4.15.2",
     "axios": "^0.21.1",
-  "@craco/craco": "^6.1.2",
+    "@craco/craco": "^6.1.2",
 }
 ```
 
