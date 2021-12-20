@@ -1,4 +1,11 @@
 /**
+ * @author [黄伟绩]
+ * @email [1835773652@qq.com]
+ * @create date 2021-12-20 16:34:25
+ * @modify date 2021-12-20 16:34:25
+ * @desc [description]
+ */
+/**
  * 包含整个项目中所有的请求接口函数： 接口请求函数
  * 函数的返回值是promise对象
  */
@@ -25,8 +32,10 @@ export const reqAddress = (key) => {
 
 /**
  * 登录
+ * @param {*} username 用户名
+ * @param {*} password 密码
+ * @returns promise
  */
-
 export const validateLogin = (username, password) => {
   return ajax({
     method: 'post',
@@ -38,6 +47,7 @@ export const validateLogin = (username, password) => {
 
 /**
  * 验证是否登录
+ * @returns promise
  */
 export const isloggedin = () => {
   return ajax({
@@ -49,8 +59,8 @@ export const isloggedin = () => {
 
 /**
  * 退出登录
+ * @returns
  */
-
 export const Logout = () => {
   return ajax({
     method: 'post',
@@ -61,6 +71,7 @@ export const Logout = () => {
 
 /**
  * 用户信息等
+ * @returns
  */
 export const usercenterDetail = () => {
   return ajax({
@@ -71,9 +82,9 @@ export const usercenterDetail = () => {
 };
 
 /**
- * 获取首屏分类列表 catelist
+ * 获取主页分类列表 catelist
+ * @returns
  */
-
 export const reqCateList = () => {
   return ajax({
     method: 'post',
@@ -81,10 +92,12 @@ export const reqCateList = () => {
     data: {},
   });
 };
+
 /**
  * 获取详细分类列表 子分类
+ * @param {*} catId
+ * @returns
  */
-
 export const reqcateDetail = (catId) => {
   return ajax({
     method: 'post',
@@ -95,8 +108,9 @@ export const reqcateDetail = (catId) => {
 
 /**
  * 主页数据接口
+ * @param {*} platform
+ * @returns
  */
-
 export const main = (platform) => {
   return ajax({
     method: 'post',
@@ -108,6 +122,8 @@ export const main = (platform) => {
 
 /**
  * 商品详情
+ * @param {*} groupParams
+ * @returns
  */
 export const goodsDetail = (groupParams) => {
   return ajax({
@@ -119,6 +135,8 @@ export const goodsDetail = (groupParams) => {
 
 /**
  * 搜索检索提示
+ * @param {*} key
+ * @returns
  */
 export const getSearchKey = (key) => {
   return ajax({
@@ -130,6 +148,10 @@ export const getSearchKey = (key) => {
 
 /**
  * 根据 keyword 进行搜索
+ * @param {*} keyWord
+ * @param {*} pageNum
+ * @param {*} pageSize
+ * @returns
  */
 export const doSearch = (keyWord, pageNum, pageSize) => {
   return ajax({
@@ -141,8 +163,9 @@ export const doSearch = (keyWord, pageNum, pageSize) => {
 
 /**
  * 搜索参数数据， 返回推荐数据
+ * @param {*} count
+ * @returns
  */
-
 export const metisCart = (count) => {
   return ajax({
     method: 'post',
@@ -153,8 +176,12 @@ export const metisCart = (count) => {
 
 /**
  * 主页分类 根据queryId 进行搜索
+ * @param {*} queryId
+ * @param {*} queryString
+ * @param {*} pageNum
+ * @param {*} pageSize
+ * @returns
  */
-
 export const queryIdSearch = (queryId, queryString, pageNum, pageSize) => {
   return ajax({
     method: 'post',
@@ -169,10 +196,13 @@ export const queryIdSearch = (queryId, queryString, pageNum, pageSize) => {
 };
 
 /**
- * 添加购物车
- * gid, pid, total
+ *  添加购物车
+ * @param {*} gid
+ * @param {*} pid
+ * @param {*} total
+ * @param {*} cart_type
+ * @returns
  */
-
 export const orderAddCart = (gid, pid, total, cart_type = 0) => {
   return ajax({
     method: 'post',
@@ -188,8 +218,8 @@ export const orderAddCart = (gid, pid, total, cart_type = 0) => {
 
 /**
  * 购物车总条数
+ * @returns
  */
-
 export const getCartCount = () => {
   return ajax({
     method: 'post',
@@ -200,6 +230,7 @@ export const getCartCount = () => {
 
 /**
  * 购物车列表
+ * @returns
  */
 export const getCartList = () => {
   return ajax({
@@ -211,6 +242,10 @@ export const getCartList = () => {
 
 /**
  * 购物车单个商品数量增加或者减少接口
+ * @param {*} id
+ * @param {*} pid
+ * @param {*} goods_num
+ * @returns
  */
 export const changeCartGoodEdit = (id, pid, goods_num) => {
   return ajax({
@@ -222,6 +257,8 @@ export const changeCartGoodEdit = (id, pid, goods_num) => {
 
 /**
  * 购物车修改选中状态
+ * @param {*} data
+ * @returns
  */
 export const changeCartGoodSel = (data) => {
   return ajax({
@@ -233,6 +270,9 @@ export const changeCartGoodSel = (data) => {
 
 /**
  * 购物车商品删
+ * @param {*} id
+ * @param {*} pid
+ * @returns
  */
 export const delCartGood = (id, pid) => {
   return ajax({
@@ -244,8 +284,8 @@ export const delCartGood = (id, pid) => {
 
 /**
  * 获取用户收货地址列表
+ * @returns
  */
-
 export const getAddressList = () => {
   return ajax({
     method: 'post',
@@ -256,6 +296,9 @@ export const getAddressList = () => {
 
 /**
  * 修改默认地址选择
+ * @param {*} id
+ * @param {*} uid
+ * @returns
  */
 export const getSetDefault = (id, uid) => {
   return ajax({
@@ -266,7 +309,10 @@ export const getSetDefault = (id, uid) => {
 };
 
 /**
- * 获取要显示模拟框的数据
+ *  获取要显示模拟框的数据
+ * @param {*} id
+ * @param {*} uid
+ * @returns
  */
 export const getView = (id, uid) => {
   return ajax({
@@ -278,6 +324,18 @@ export const getView = (id, uid) => {
 
 /**
  * 修改当前地址的信息
+ * @param {*} id
+ * @param {*} uid
+ * @param {*} consigne
+ * @param {*} tel
+ * @param {*} province
+ * @param {*} city
+ * @param {*} area
+ * @param {*} street
+ * @param {*} detailAddress
+ * @param {*} zipcode
+ * @param {*} isDefault
+ * @returns
  */
 export const getUpdateAddress = (
   id,
@@ -313,6 +371,16 @@ export const getUpdateAddress = (
 
 /**
  * 添加地址
+ * @param {*} consigne
+ * @param {*} tel
+ * @param {*} province
+ * @param {*} city
+ * @param {*} area
+ * @param {*} street
+ * @param {*} detailAddress
+ * @param {*} zipcode
+ * @param {*} isDefault
+ * @returns
  */
 export const getAddAddress = (
   consigne,
@@ -344,7 +412,9 @@ export const getAddAddress = (
 
 /**
  * 删除地址
- *
+ * @param {*} id
+ * @param {*} uid
+ * @returns
  */
 export const getDelAddress = (id, uid) => {
   return ajax({
@@ -367,7 +437,10 @@ export const getCheckoutData = (cart_type = 0) => {
 };
 
 /**
- * submit 商品提交接口
+ * submit 商品提交
+ * @param {*} data
+ * @param {*} cart_type
+ * @returns
  */
 export const getSubmitOrder = (data, cart_type = 0) => {
   return ajax({
@@ -383,6 +456,8 @@ export const getSubmitOrder = (data, cart_type = 0) => {
 /**
  * 通过订单号查询订单信息接口
  * /default/order/orderinfo/orderDetail
+ * @param {*} orderId
+ * @returns
  */
 export const getOrderDetail = (orderId) => {
   return ajax({
@@ -394,8 +469,15 @@ export const getOrderDetail = (orderId) => {
 
 /**
  * 获取支付二维码信息
- * http://49.233.14.172/api/order
- * post
+ * http://49.233.14.172:8888/api/order
+ * @param {*} order_id
+ * @param {*} order_type
+ * @param {*} order_price
+ * @param {*} order_name
+ * @param {*} sign
+ * @param {*} redirect_url
+ * @param {*} extension
+ * @returns
  */
 export const getPayCode = (
   order_id,
@@ -425,8 +507,8 @@ export const getPayCode = (
 /**
  * app 根组件调用 用于检测是否有过期的商品等
  * /default/main/pip
+ * @returns
  */
-
 export const pip = () => {
   return ajax({
     method: 'post',
