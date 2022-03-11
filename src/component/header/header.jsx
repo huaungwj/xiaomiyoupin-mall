@@ -108,7 +108,7 @@ function Header(props) {
           {/* logo */}
           <a className="logo" onClick={linkHome}>
             <img
-              src="/assets/media/logo@2x.30cd8c00.png"
+              src="/public/assets/media/logo@2x.30cd8c00.png"
               width="50%"
               style={{ height: '47px' }}
             />

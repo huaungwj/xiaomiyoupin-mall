@@ -14,7 +14,7 @@ import ajax from './ajax';
 
 // 请求的url
 // const domain = 'http://127.0.0.1:7001';
-const domain = 'http://49.233.14.172:8888';
+const domain = 'https://mall.weikill.club';
 
 /**
  * 根据key获取国内的地址， 在 application 中应用在添加地址中
@@ -490,7 +490,7 @@ export const getPayCode = (
 ) => {
   return ajax({
     method: 'post',
-    url: `http://49.233.14.172:8888/api/order`,
+    url: `${domain}/api/order`,
     data: {
       order_id,
       order_type,

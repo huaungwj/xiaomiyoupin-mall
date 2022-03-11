@@ -13,12 +13,12 @@ import qs from 'qs';
 function BannerNav(props) {
   const [dotPosition, setDotPosition] = useState('bottom');
   const [imgs, setImgs] = useState([
-    '/assets/media/banner/banner1.png',
-    '/assets/media/banner/banner2.jpeg',
-    '/assets/media/banner/banner3.jpeg',
-    '/assets/media/banner/banner4.jpeg',
-    '/assets/media/banner/banner5.png',
-    '/assets/media/banner/banner6.jpeg',
+    '/public/assets/media/banner/banner1.png',
+    '/public/assets/media/banner/banner2.jpeg',
+    '/public/assets/media/banner/banner3.jpeg',
+    '/public/assets/media/banner/banner4.jpeg',
+    '/public/assets/media/banner/banner5.png',
+    '/public/assets/media/banner/banner6.jpeg',
   ]);
   // 当前轮播下标
   const [currIndex, setCurrIndex] = useState(0);

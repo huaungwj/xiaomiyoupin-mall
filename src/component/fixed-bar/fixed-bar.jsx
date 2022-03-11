@@ -1,6 +1,6 @@
-import React from "react";
-import {BackTop, Popover} from "antd";
-import "./fixed-bar.less";
+import React from 'react';
+import { BackTop, Popover } from 'antd';
+import './fixed-bar.less';
 
 function FixedBar() {
   // 气泡提醒框 联系客服
@@ -30,9 +30,9 @@ function FixedBar() {
       <div className="pop-inner">
         <img
           className="qr-code"
-          src="/assets/media/code.8d037abc.png"
+          src="/public/assets/media/code.8d037abc.png"
           alt="qr-code"
-          style={{ width: "88px", height: "88px" }}
+          style={{ width: '88px', height: '88px' }}
         />
         <p className="site-info">
           下载小米有品APP
@@ -50,9 +50,9 @@ function FixedBar() {
         <div className="gift-bg"></div>
         <img
           className="qr-code"
-          src="/assets/media/code.8d037abc.png"
+          src="/public/assets/media/code.8d037abc.png"
           alt="qr-code"
-          style={{ width: "88px", height: "88px" }}
+          style={{ width: '88px', height: '88px' }}
         />
         <p className="site-info">立即扫码下载·小米有品 APP</p>
       </div>
@@ -66,7 +66,7 @@ function FixedBar() {
       <div className="pop-inner">
         <img
           className="qr-code"
-          src="/assets/media/wx_code.08890cf0.png"
+          src="/public/assets/media/wx_code.08890cf0.png"
           alt="qr-code"
         />
         <p className="site-info">
@@ -78,7 +78,7 @@ function FixedBar() {
   );
 
   const backTopStyle = {
-    color: "#555",
+    color: '#555',
   };
 
   return (
@@ -134,7 +134,7 @@ function FixedBar() {
         <BackTop visibilityHeight={1}>
           <li>
             <a className="m-icons m-icons- m-icons-top" data-src="" href="#!">
-                <i style={backTopStyle} className="iconfont iconhuojian"></i>
+              <i style={backTopStyle} className="iconfont iconhuojian"></i>
             </a>
           </li>
         </BackTop>

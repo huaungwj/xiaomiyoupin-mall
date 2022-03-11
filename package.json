@@ -2,7 +2,7 @@
   "name": "xiaomiyoupin-mall",
   "author": "huangweji",
   "githubUrl": "https://github.com/huaungwj/xiaomiyoupin-mall",
-  "homepage": "/static/mall",
+  "homepage": "/public",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -14,6 +14,7 @@
     "antd": "^4.15.2",
     "axios": "^0.21.1",
     "craco-less": "^1.17.1",
+    "eslint": "^7.11.0",
     "events": "^3.3.0",
     "lodash": "^4.17.21",
     "md5": "^2.3.0",

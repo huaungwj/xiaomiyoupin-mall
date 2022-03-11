@@ -14,7 +14,7 @@ react17.0.2 + react-router5.2.0 + react-redux7.2.4
 
 ## 访问地址
 
-http://49.233.14.172:2888/static/mall/index.html#/
+https://mall.weikill.club
 
 ## 关于 数据接口 的说明
 
